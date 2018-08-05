@@ -10,7 +10,7 @@ import {
     Container
 } from 'reactstrap';
 
-class AppNavbar extends Component {
+class NavbarApp extends Component {
     state = {
         isOpen: false
     }
@@ -29,7 +29,7 @@ class AppNavbar extends Component {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="github.com/rasyadh">Github</NavLink>
+                                <NavLink href="https://github.com/rasyadh">Github</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
@@ -39,4 +39,4 @@ class AppNavbar extends Component {
     }
 }
 
-export default AppNavbar;
+export default NavbarApp;
