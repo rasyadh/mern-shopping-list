@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NavbarApp from './Navbar/NavbarApp';
 import ShoppingList from '../../containers/ShoppingList/ShoppingList';
+import ModalItem from '../Modal/ModalItem';
+import { Container } from 'reactstrap';
 import { Provider } from 'react-redux';
 import store from '../../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +14,10 @@ class App extends Component {
             <Provider store={store}>
                 <div className="App">
                     <NavbarApp />
-                    <ShoppingList />
+                    <Container>
+                        <ModalItem />
+                        <ShoppingList />
+                    </Container>
                 </div>
             </Provider>
         );
